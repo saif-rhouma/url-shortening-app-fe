@@ -1,0 +1,70 @@
+{
+  "name": "react-ts-skeleton",
+  "private": true,
+  "version": "0.0.0",
+  "description": "React Skeleton Project",
+  "author": "Saifeddine RHOUMA",
+  "type": "module",
+  "engines": {
+    "node": "> 18.12.0",
+    "npm": "> 6.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css}\"",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "@hookform/resolvers": "^3.10.0",
+    "@tailwindcss/vite": "^4.0.3",
+    "@tanstack/react-query": "^5.66.0",
+    "axios": "^1.7.9",
+    "next-themes": "^0.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.2",
+    "react-hot-toast": "^2.5.1",
+    "react-icons": "^5.4.0",
+    "react-router-dom": "^7.1.5",
+    "tailwindcss": "^4.0.3",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/ui": "^3.0.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "i": "^0.3.7",
+    "jsdom": "^26.0.0",
+    "lint-staged": "^15.3.0",
+    "npm": "^10.9.2",
+    "prettier": "^3.4.2",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5",
+    "vitest": "^3.0.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "npm run format",
+      "npm run lint:fix",
+      "git add ."
+    ]
+  }
+}
